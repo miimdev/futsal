@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>تیم فوتسال مبلمان پرنس بیرجند | معرفی و ثبت‌نام بازیکنان</title>
+    <meta name="description" content="تیم فوتسال مبلمان پرنس بیرجند - عضویت در تیم، ثبت‌نام بازیکنان">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== LOADING SPLASH ===== (همان کد خودت، تغییری نکرده) ===== -->
+    <div id="splash-loader" class="splash-container">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <i class="fas fa-futbol"></i>
+            </div>
+            <div class="splash-spinner"></div>
+            <h2>پرنس بیرجند</h2>
+            <p>در حال بارگذاری...</p>
+            <div class="splash-progress">
+                <div class="splash-progress-bar" id="splashProgress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div id="main-content" style="display: none;">
+
+        <!-- HEADER (همان کد خودت) -->
+        <nav class="navbar">
+            <div class="logo-area">
+                <img src="img/logo.png" alt="لوگوی تیم پرنس" class="logo-img"
+                    onerror="this.src='https://placehold.co/200x200/0A2F6C/F5C542?text=PRINCE'">
+                <div class="slogan-under-logo">باور کن، بجنگ، پیروز شو</div>
+            </div>
+            <div class="brand-center">
+                <div class="team-name">مبلمان پرنس بیرجند</div>
+            </div>
+            <div class="nav-area">
+                <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#about">درباره تیم</a></li>
+                    <li><a href="#coaches">کادر فنی</a></li>
+                    <li><a href="#matches">مسابقات</a></li>
+                    <li><a href="#register">ثبت‌نام</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- HERO (همان کد خودت) -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="glow-text">مبلمان پرنس بیرجند</h2>
+                <div class="hero-slogan" id="heroSlogan"></div>
+                <a href="#register" class="btn hero-btn pulse-btn">عضویت در خانواده پرنس <i
+                        class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="scroll-indicator">
+                <span>اسکرول کنید</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT (همان کد خودت) -->
+        <section id="about" class="about-section">
+            <canvas id="particles-canvas"></canvas>
+            <div class="container-about">
+                <h2 class="section-title about-title">دربارهٔ تیم</h2>
+                <div class="glass-box neon-border">
+                    <div class="about-icon">
+                        <i class="fas fa-trophy"></i>
+                        <i class="fas fa-futbol"></i>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="about-content">
+                        <h3>تاریخچه باشگاه پرنس بیرجند</h3>
+                        <div class="typewriter-container">
+                            <p id="typewriter-text" class="typewriter"></p>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat counter-card"><span class="stat-number" data-target="1398">۰</span><span
+                                class="stat-label">سال تأسیس</span></div>
+                        <div class="stat counter-card"><span class="stat-number" data-target="8">۰</span><span
+                                class="stat-label">جام و افتخار</span></div>
+                        <div class="stat counter-card"><span class="stat-number" data-target="28">۰</span><span
+                                class="stat-label">بازیکن حرفه‌ای</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COACHES (همان کد خودت) -->
+        <section id="coaches" class="coaches-section">
+            <h2 class="section-title">کادر فنی</h2>
+            <div class="coaches-grid">
+                <div class="coach-card">
+                    <div class="coach-img"><img src="img/hossein-talebi.png" alt="حسین طالبی"
+                            onerror="this.src='https://placehold.co/400x450/0A2F6C/F5C542?text=Hossein+Talebi'">
+                        <div class="coach-overlay"><i class="fas fa-chalkboard-user"></i></div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>حسین طالبی</h3>
+                        <p class="coach-role">سرمربی تیم</p>
+                        <div class="coach-bio">
+                            <p>حسین طالبی با ۱۵ سال سابقه مربیگری در لیگ برتر فوتسال ایران، توانسته تیم‌های مختلفی را به
+                                قهرمانی برساند.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-card">
+                    <div class="coach-img"><img src="img/davoud-mobasheri.png" alt="داوود مباشری"
+                            onerror="this.src='https://placehold.co/400x450/0A2F6C/F5C542?text=Davoud+Mobasheri'">
+                        <div class="coach-overlay"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>داوود مباشری</h3>
+                        <p class="coach-role">مربی تخصصی</p>
+                        <div class="coach-bio">
+                            <p>داوود مباشری مدرس رسمی کنفدراسیون فوتبال آسیا و متخصص آنالیز تاکتیک است.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-card">
+                    <div class="coach-img"><img src="img/ahmad-mohammadi.png" alt="احمد محمدی"
+                            onerror="this.src='https://placehold.co/400x450/0A2F6C/F5C542?text=Ahmad+Mohammadi'">
+                        <div class="coach-overlay"><i class="fas fa-hand-fist"></i></div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>احمد محمدی</h3>
+                        <p class="coach-role">مربی دروازه بان‌ها</p>
+                        <div class="coach-bio">
+                            <p>احمد محمدی با ۸ سال سابقه مربیگری تخصصی دروازه‌بانان، از مدرسان برجسته فدراسیون فوتسال
+                                است.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== بخش ویژه بازی بعدی ===== -->
+        <section id="matches" class="next-match-super-section">
+            <h2 class="section-title">بازی ویژه بعدی</h2>
+
+            <div class="super-match-card">
+                <div class="card-neon-border"></div>
+                <div class="card-shine"></div>
+
+                <div class="match-badge-super">
+                    <i class="fas fa-fire"></i>
+                    <span>حساس‌ترین بازی فصل</span>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="teams-super">
+                    <div class="team home">
+                        <div class="team-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="team-name">پرنس بیرجند</div>
+                        <div class="team-record">قهرمان دوره قبل</div>
+                    </div>
+                    <div class="vs-super">
+                        <div class="vs-circle">VS</div>
+                        <div class="vs-pulse-ring"></div>
+                    </div>
+                    <div class="team away">
+                        <div class="team-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="team-name">آریا شوکت</div>
+                        <div class="team-record">نایب قهرمان</div>
+                    </div>
+                </div>
+
+                <div class="match-description">
+                    <p>✨ دربی حساس استان خراسان جنوبی - دو تیم برای صدر جدول رقابت می‌کنند.
+                        جو ورزشگاه فوق‌العاده خواهد بود. این بازی را از دست ندهید!</p>
+                    <div class="description-tags">
+                        <span><i class="fas fa-ticket-alt"></i> ظرفیت: ۲۰۰۰ نفر</span>
+                        <span><i class="fas fa-tv"></i> پخش زنده: شبکه استانی</span>
+                    </div>
+                </div>
+
+                <div class="match-info-super">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>سالن بصیری پور - بیرجند</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="match-date-display"></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>ساعت ۱۸:۰۰</span>
+                    </div>
+                </div>
+
+                <div class="countdown-super">
+                    <div class="cd-title">زمان باقی‌مانده تا شروع</div>
+                    <div class="cd-timer-super" id="superCountdown">
+                        <div class="cd-unit"><span class="days">۰</span><span>روز</span></div>
+                        <div class="cd-unit"><span class="hours">۰</span><span>ساعت</span></div>
+                        <div class="cd-unit"><span class="minutes">۰</span><span>دقیقه</span></div>
+                        <div class="cd-unit"><span class="seconds">۰</span><span>ثانیه</span></div>
+                    </div>
+                </div>
+
+                <div class="match-notice">
+                    <i class="fas fa-bell"></i> هزینه بلیط: ۵۰ هزار تومان (قابل تهیه از سایت)
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ثبت‌نام بازیکنان - CTA خفن ===== -->
+        <section id="register" class="cta-register-section">
+            <div class="cta-bg-particles"></div>
+            <div class="cta-glow-orb"></div>
+
+            <div class="cta-card">
+                <div class="cta-card-inner">
+                    <div class="cta-badge">
+                        <i class="fas fa-futbol"></i>
+                        <span>فرصت ویژه</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2 class="cta-title">به خانواده پرنس بپیوند</h2>
+                    <p class="cta-subtitle">مقطع حساس فصل – تیم در حال جذب بازیکنان مستعد</p>
+
+                    <div class="cta-feature-list">
+                        <div class="feature"><i class="fas fa-chalkboard-user"></i> <span>تمرین با مربیان درجه یک</span>
+                        </div>
+                        <div class="feature"><i class="fas fa-trophy"></i> <span>شرکت در لیگ‌های معتبر</span></div>
+                        <div class="feature"><i class="fas fa-handshake"></i> <span>قرارداد حرفه‌ای</span></div>
+                    </div>
+
+                    <form id="ctaPlayerForm" class="cta-form">
+                        <div class="input-box">
+                            <input type="text" id="ctaFullname" required autocomplete="off">
+                            <label>نام و نام خانوادگی</label>
+                            <i class="fas fa-user"></i>
+                            <div class="input-focus-border"></div>
+                        </div>
+
+                        <div class="row-split">
+                            <div class="input-box">
+                                <input type="text" id="ctaBirthdate" required>
+                                <label>تاریخ تولد</label>
+                                <i class="fas fa-calendar-alt"></i>
+                                <div class="input-focus-border"></div>
+                            </div>
+                            <div class="input-box">
+                                <input type="tel" id="ctaMobile" required>
+                                <label>شماره موبایل</label>
+                                <i class="fas fa-phone"></i>
+                                <div class="input-focus-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="row-split">
+                            <div class="input-box">
+                                <select id="ctaPosition" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="goalkeeper">🥅 گلر (دروازه‌بان)</option>
+                                    <option value="defender">🛡️ عقب‌گیر (مدافع)</option>
+                                    <option value="winger">⚡ فلنگ (وینگر)</option>
+                                    <option value="forward">🎯 راس (مهاجم)</option>
+                                </select>
+                                <label>پست تخصصی</label>
+                                <i class="fas fa-futbol"></i>
+                                <div class="input-focus-border"></div>
+                            </div>
+                            <div class="input-box">
+                                <select id="ctaExperience" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="none">بدون سابقه</option>
+                                    <option value="1-2">۱ تا ۲ سال</option>
+                                    <option value="3-5">۳ تا ۵ سال</option>
+                                    <option value="5+">بیش از ۵ سال</option>
+                                </select>
+                                <label>سابقه بازی</label>
+                                <i class="fas fa-chart-line"></i>
+                                <div class="input-focus-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <textarea id="ctaMessage" rows="2"></textarea>
+                            <label>پیام برای مدیران (اختیاری)</label>
+                            <i class="fas fa-comment"></i>
+                            <div class="input-focus-border"></div>
+                        </div>
+
+                        <button type="submit" class="cta-submit">
+                            <span class="btn-text">ارسال درخواست عضویت</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            <div class="btn-wave"></div>
+                        </button>
+                    </form>
+
+                    <p class="cta-note">🔹 پس از ثبت، کارشناسان ما ظرف ۲۴ ساعت با شما تماس می‌گیرند</p>
+                </div>
+            </div>
+        </section>
+        <!-- ===== فوتر سوپر گرافیکی ===== -->
+        <footer class="super-footer">
+            <div class="footer-glow"></div>
+            <div class="footer-content">
+                <div class="footer-col logo-col">
+                    <img src="img/logo.png" alt="لوگو باشگاه" class="footer-logo">
+                    <p>مبلمان پرنس بیرجند</p>
+                    <span class="slogan">باور کن، بجنگ، پیروز شو</span>
+                </div>
+
+                <div class="footer-col">
+                    <h4>دسترسی سریع</h4>
+                    <ul>
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#about">درباره تیم</a></li>
+                        <li><a href="#coaches">کادر فنی</a></li>
+                        <li><a href="#matches">مسابقات</a></li>
+                        <li><a href="#register">ثبت‌نام</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>تماس با ما</h4>
+                    <p><i class="fas fa-phone"></i> ۰۵۶-۳۲۲۲۱۲۳۴</p>
+                    <p><i class="fas fa-envelope"></i> info@princefutsal.ir</p>
+                    <p><i class="fas fa-map-marker-alt"></i> بیرجند، سالن الغدیر</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>ما را دنبال کنید</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col enamad-col">
+                    <h4>نمادهای اعتماد</h4>
+                    <div class="enamad-placeholder">
+                        <div class="enamad-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>نماد اعتماد</span>
+                        </div>
+                        <div class="enamad-item">
+                            <i class="fas fa-lock"></i>
+                            <span>اینماد</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۴ - تمامی حقوق برای باشگاه فوتسال مبلمان پرنس بیرجند محفوظ است.</p>
+                <p>طراحی و توسعه توسط مجتبی میدانی</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
